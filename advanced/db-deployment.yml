@@ -13,4 +13,4 @@ spec:
       - name: todo-db-pod
         image: mongo
         ports:
-        -  containerPort: 27012
+        -  containerPort: 27017
