@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: todo-api-deploy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: todo-api
+    spec:
+      containers:
+      - name: todo-api-pod
+        image: areynolds762/kubernetes-todo-api
+        ports:
+        -  containerPort: 8080

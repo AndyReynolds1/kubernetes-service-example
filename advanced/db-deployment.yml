@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: todo-db-deploy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: todo-db
+    spec:
+      containers:
+      - name: todo-db-pod
+        image: mongo
+        ports:
+        -  containerPort: 27012

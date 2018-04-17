@@ -1,6 +1,11 @@
 # kubernetes-service-example
-Example website deployment in Kubernetes
+Example deployments in Kubernetes
 
-`kubectl create -f web-svc.yml`
+https://labs.play-with-k8s.com/
 
-`kubectl create -f web-deployment.yml`
+## Simple example
+Single layer web site deployment with load balancer service
+
+## Advanced example
+Multi layered application with web front end, API and back end DB
+
