@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: todo-web-pod
-        image: areynolds762/kubernetes-todo-web:1.0
+        image: areynolds762/kubernetes-todo-web
         ports:
         -  containerPort: 8080
