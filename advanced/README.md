@@ -7,6 +7,7 @@ https://labs.play-with-k8s.com/
 Multi layered application with web front end, API and back end DB:
 ```
 git clone https://github.com/TheStally/kubernetes-service-example.git
+
 kubectl create -f db-svc.yml && \
 kubectl create -f api-svc.yml && \
 kubectl create -f web-svc.yml && \
