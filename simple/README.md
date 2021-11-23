@@ -1,11 +1,7 @@
 # kubernetes-service-example
-Example deployments in Kubernetes
 
-https://labs.play-with-k8s.com/
+Simple example deployment in Kubernetes.
 
-## Simple example
-Single layer web site deployment with load balancer service:
+Creates a `Deployment` running 2 instances of a demo website along with a `Service` of type `NodePort` to expose the website outside the cluster on port `30001`.
 
-`kubectl apply -f web-svc.yml`
-
-`kubectl apply -f web-deployment.yml`
+`kubectl apply -f deployment.yml`
